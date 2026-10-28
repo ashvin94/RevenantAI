@@ -1,0 +1,18 @@
+{
+  "artifact_trust": "generated_locally_by_scripts/train_ml.py",
+  "dataset": "synthetic",
+  "features": [
+    "duration_ms",
+    "retry_no",
+    "active_reservations",
+    "stock_delta"
+  ],
+  "seed": 42,
+  "train_normal_samples": 1000,
+  "holdout_normal_samples": 200,
+  "synthetic_fault_samples": 100,
+  "synthetic_holdout_false_positive_rate": 0.02,
+  "synthetic_fault_recall": 1.0,
+  "trained_at": "2026-10-28T07:09:32.180221+00:00",
+  "limitations": "Synthetic demo metrics only; no claim of production generalization."
+}

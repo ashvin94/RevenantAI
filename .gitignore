@@ -1,0 +1,57 @@
+# Local secrets
+.env
+.env.*
+!.env.example
+backend/.env
+frontend/.env
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyd
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+.venv/
+venv/
+*.egg-info/
+.phase0-temp/
+
+# Local databases and runtime state
+*.db
+*.db-shm
+*.db-wal
+*.sqlite
+*.sqlite3
+backend/data/*.csv
+backend/data/*.parquet
+backend/artifacts/*.joblib
+backend/artifacts/*.pkl
+backend/artifacts/*.pickle
+
+# Keep artifact/data directories available without trusting generated files
+!backend/artifacts/.gitkeep
+!backend/data/.gitkeep
+
+# Node / Vite
+node_modules/
+frontend/dist/
+frontend/.vite/
+frontend/coverage/
+
+# Browser test output
+frontend/playwright-report/
+frontend/test-results/
+
+# IDE and operating system
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+
+# Logs and temporary files
+*.log
+*.tmp
+*.temp
