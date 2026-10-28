@@ -1,10 +1,10 @@
-# MirrorHeal AI + PhantomGuard
+# Revenant AI
 
 [![Deploy to Render](https://render.com/images/deploy-to-render-button.svg)](https://dashboard.render.com/blueprint/new?repo=https%3A%2F%2Fgithub.com%2Fashvin94%2FRevenantAI)
 
 The Blueprint deploys both `mirrorheal-api` and `mirrorheal-ui`. Render prompts for `GEMINI_API_KEY`; keep it in Render secrets and never commit it.
 
-MirrorHeal is a local-first hackathon MVP for detecting and safely repairing a simulated silent inventory-reservation failure. The implementation will follow [`PHASED_IMPLEMENTATION_PLAN.md`](./PHASED_IMPLEMENTATION_PLAN.md) one verified phase at a time.
+Revenant AI is a local-first hackathon MVP for detecting and safely repairing a simulated silent inventory-reservation failure.
 
 ## Current status
 

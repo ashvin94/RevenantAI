@@ -16,7 +16,7 @@ def test_settings_ignore_unknown_environment_fields(monkeypatch: pytest.MonkeyPa
 
     settings = Settings(_env_file=None)
 
-    assert settings.app_name == "MirrorHeal AI"
+    assert settings.app_name == "Revenant AI"
 
 
 def test_invalid_provider_fails_configuration() -> None:

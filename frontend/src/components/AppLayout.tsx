@@ -37,7 +37,7 @@ export const AppLayout: React.FC<AppLayoutProps> = ({
             <div>
               <div className="flex items-center gap-2">
                 <h1 className="text-base font-extrabold tracking-tight bg-gradient-to-r from-white via-slate-100 to-slate-300 bg-clip-text text-transparent">
-                  MirrorHeal AI
+                  Revenant AI
                 </h1>
                 <span className="text-[10px] font-mono tracking-widest uppercase px-2 py-0.5 rounded-full bg-cyan-950/80 text-cyan-300 border border-cyan-500/30 font-semibold shadow-[0_0_10px_rgba(6,182,212,0.2)]">
                   AUTONOMOUS TWIN
@@ -75,7 +75,7 @@ export const AppLayout: React.FC<AppLayoutProps> = ({
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-wrap items-center justify-between gap-3">
           <div className="flex items-center gap-2 text-[11px]">
             <Terminal className="w-3.5 h-3.5 text-slate-400" aria-hidden="true" />
-            <span>MirrorHeal AI Engine • Phase 1B Verified Shell</span>
+            <span>Revenant AI Engine • Verified Recovery Platform</span>
             <span className="text-slate-700">•</span>
             <span className="text-slate-400">Strictly Isolated In-Memory Twin</span>
           </div>

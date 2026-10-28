@@ -23,7 +23,7 @@ class Settings(BaseSettings):
         case_sensitive=False,
     )
 
-    app_name: str = "MirrorHeal AI"
+    app_name: str = "Revenant AI"
     app_version: str = "0.1.0"
     database_url: str = "sqlite:///./mirrorheal.db"
     allowed_origin: str = "http://localhost:5173"
