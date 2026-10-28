@@ -1,10 +1,14 @@
 # MirrorHeal AI + PhantomGuard
 
+[![Deploy to Render](https://render.com/images/deploy-to-render-button.svg)](https://dashboard.render.com/blueprint/new?repo=https%3A%2F%2Fgithub.com%2Fashvin94%2FRevenantAI)
+
+The Blueprint deploys both `mirrorheal-api` and `mirrorheal-ui`. Render prompts for `GEMINI_API_KEY`; keep it in Render secrets and never commit it.
+
 MirrorHeal is a local-first hackathon MVP for detecting and safely repairing a simulated silent inventory-reservation failure. The implementation will follow [`PHASED_IMPLEMENTATION_PLAN.md`](./PHASED_IMPLEMENTATION_PLAN.md) one verified phase at a time.
 
 ## Current status
 
-Phase 0 is implemented: environment requirements, secret-safe configuration, dependency metadata, and a real Gemini availability smoke check. No application workflow, database schema, frontend, ML artifact, or recovery behavior is implemented yet.
+P0 is complete: real order workflow, controlled duplicate fault, trained IsolationForest suspicion signal, deterministic invariant proof, typed Gemini proposal, isolated digital-twin simulation, approved transactional recovery, idempotency, and post-commit verification.
 
 ## Prerequisites
 
@@ -89,4 +93,3 @@ npm run build
 - A missing key produces an explicit unavailable result.
 - No live Gemini result has been claimed unless the smoke command exits successfully.
 - `backend/requirements.lock.txt` records the exact Phase 0 environment resolved on this workstation. `pyproject.toml` remains the source declaration and the lock should be deliberately regenerated after dependency updates.
-
