@@ -4,9 +4,9 @@ ENV PYTHONDONTWRITEBYTECODE=1 PYTHONUNBUFFERED=1
 WORKDIR /app
 
 COPY pyproject.toml requirements.lock.txt ./
-RUN pip install --no-cache-dir --upgrade pip && pip install --no-cache-dir .
 COPY app ./app
 COPY scripts ./scripts
+RUN pip install --no-cache-dir --upgrade pip && pip install --no-cache-dir .
 RUN mkdir -p artifacts
 RUN python scripts/train_ml.py
 
