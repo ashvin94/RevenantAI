@@ -14,12 +14,12 @@ export const AppLayout: React.FC<AppLayoutProps> = ({
   children,
 }) => {
   return (
-    <div className="min-h-screen bg-[#050811] cyber-grid text-slate-100 flex flex-col relative selection:bg-cyan-500/30 selection:text-cyan-200">
+    <div className="min-h-screen cyber-grid text-slate-900 flex flex-col relative selection:bg-slate-200 selection:text-slate-900">
       {/* Ambient Top Glow */}
       <div className="glow-ambient" />
 
       {/* Primary Header */}
-      <header className="border-b border-slate-800/80 bg-[#080d1a]/80 sticky top-0 z-50 backdrop-blur-xl">
+      <header className="border-b border-slate-200/80 sticky top-0 z-50 backdrop-blur-xl">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3 flex flex-wrap items-center justify-between gap-4">
           
           {/* Logo & Brand Identity */}
@@ -71,7 +71,7 @@ export const AppLayout: React.FC<AppLayoutProps> = ({
       </main>
 
       {/* Cybernetic Footer */}
-      <footer className="border-t border-slate-800/60 bg-[#050811]/90 py-4 text-xs text-slate-500 relative z-10 backdrop-blur-sm">
+      <footer className="border-t border-slate-200/60 py-4 text-xs text-slate-500 relative z-10 backdrop-blur-sm">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-wrap items-center justify-between gap-3">
           <div className="flex items-center gap-2 text-[11px]">
             <Terminal className="w-3.5 h-3.5 text-slate-400" aria-hidden="true" />

@@ -13,35 +13,51 @@ body {
   overflow-x: hidden;
 }
 
-/* MirrorHeal judge theme: obsidian surfaces, amber actions, rose incidents. */
+/* Professional monochrome judge theme: graphite surfaces, white hierarchy. */
 :root {
-  --mh-bg: #100e13;
-  --mh-surface: #19151e;
-  --mh-surface-strong: #211a27;
-  --mh-amber: #f6b73c;
-  --mh-rose: #fb7185;
-  --mh-mint: #5eead4;
+  --mh-bg: #0b0b0c;
+  --mh-surface: #151516;
+  --mh-surface-strong: #1d1d1f;
+  --mh-white: #f5f5f5;
+  --mh-muted: #a1a1aa;
 }
 
-body { background-image: radial-gradient(circle at 15% 0%, rgba(246,183,60,.10), transparent 28%), radial-gradient(circle at 90% 15%, rgba(251,113,133,.08), transparent 30%); }
+body { background-image: radial-gradient(circle at 50% 0%, rgba(255,255,255,.07), transparent 34%); }
 .cyber-grid { background-image: linear-gradient(to right, rgba(255,255,255,.035) 1px, transparent 1px), linear-gradient(to bottom, rgba(255,255,255,.035) 1px, transparent 1px); }
-.glow-ambient { background: radial-gradient(circle at 50% 0%, rgba(246,183,60,.14), rgba(251,113,133,.08) 38%, transparent 72%); }
-.glass-panel, .glass-panel-interactive { background: rgba(25,21,30,.82); border-color: rgba(246,183,60,.13); }
-.glass-panel-interactive:hover { border-color: rgba(246,183,60,.45); box-shadow: 0 12px 40px -10px rgba(246,183,60,.16), 0 0 0 1px rgba(246,183,60,.14); }
-.judge-hero { background: linear-gradient(135deg, rgba(42,29,23,.96), rgba(31,23,34,.92) 55%, rgba(40,22,31,.95)); border-color: rgba(246,183,60,.28); box-shadow: 0 24px 70px -30px rgba(246,183,60,.38), inset 0 1px rgba(255,255,255,.07); }
-.primary-action { background: linear-gradient(110deg, #f6b73c, #fb7185) !important; box-shadow: 0 10px 25px -10px rgba(246,183,60,.85); }
-.primary-action:hover:not(:disabled) { box-shadow: 0 16px 30px -10px rgba(251,113,133,.9); }
-/* Re-map the previous utility palette consistently without touching component structure. */
-[class*="text-cyan-"] { color: #f6c86e !important; }
-[class*="text-blue-"] { color: #f3a96b !important; }
-[class*="text-purple-"] { color: #f0a4bc !important; }
-[class*="text-emerald-"] { color: #5eead4 !important; }
-[class*="bg-cyan-"] { background-color: rgba(246,183,60,.12) !important; }
-[class*="bg-blue-"] { background-color: rgba(243,169,107,.12) !important; }
-[class*="bg-purple-"] { background-color: rgba(240,164,188,.12) !important; }
-[class*="border-cyan-"] { border-color: rgba(246,183,60,.38) !important; }
-[class*="border-blue-"] { border-color: rgba(243,169,107,.34) !important; }
-[class*="border-purple-"] { border-color: rgba(240,164,188,.34) !important; }
+.glow-ambient { background: radial-gradient(circle at 50% 0%, rgba(255,255,255,.11), rgba(161,161,170,.05) 38%, transparent 72%); }
+.glass-panel, .glass-panel-interactive { background: rgba(21,21,22,.88); border-color: rgba(255,255,255,.12); }
+.glass-panel-interactive:hover { border-color: rgba(255,255,255,.36); box-shadow: 0 12px 40px -10px rgba(255,255,255,.10), 0 0 0 1px rgba(255,255,255,.10); }
+.judge-hero { background: linear-gradient(135deg, rgba(37,37,39,.96), rgba(22,22,24,.94) 55%, rgba(31,31,34,.95)); border-color: rgba(255,255,255,.23); box-shadow: 0 24px 70px -30px rgba(0,0,0,.9), inset 0 1px rgba(255,255,255,.1); }
+.primary-action { background: linear-gradient(110deg, #fafafa, #bdbdc2) !important; color: #111113 !important; box-shadow: 0 10px 25px -10px rgba(255,255,255,.55); }
+.primary-action:hover:not(:disabled) { box-shadow: 0 16px 30px -10px rgba(255,255,255,.65); }
+/* Collapse the former accent palette to a single professional grayscale. */
+[class*="text-cyan-"], [class*="text-blue-"], [class*="text-purple-"], [class*="text-emerald-"], [class*="text-amber-"], [class*="text-rose-"], [class*="text-red-"] { color: #e4e4e7 !important; }
+[class*="bg-cyan-"], [class*="bg-blue-"], [class*="bg-purple-"] { background-color: rgba(255,255,255,.08) !important; }
+[class*="border-cyan-"], [class*="border-blue-"], [class*="border-purple-"] { border-color: rgba(255,255,255,.24) !important; }
+
+/* Light professional presentation variant. */
+body { background-color: #f4f5f7; color: #18181b; background-image: radial-gradient(circle at 50% 0%, rgba(255,255,255,.95), transparent 42%); }
+.cyber-grid { background-image: linear-gradient(to right, rgba(24,24,27,.035) 1px, transparent 1px), linear-gradient(to bottom, rgba(24,24,27,.035) 1px, transparent 1px); }
+.glow-ambient { background: radial-gradient(circle at 50% 0%, rgba(255,255,255,.9), rgba(228,228,231,.45) 40%, transparent 72%); }
+.glass-panel, .glass-panel-interactive { background: rgba(255,255,255,.86); border-color: rgba(24,24,27,.10); box-shadow: 0 10px 30px rgba(24,24,27,.06); }
+.glass-panel-interactive:hover { border-color: rgba(24,24,27,.28); box-shadow: 0 14px 35px rgba(24,24,27,.10); }
+.judge-hero { background: linear-gradient(135deg, #ffffff, #f1f1f3); border-color: rgba(24,24,27,.14); box-shadow: 0 20px 50px rgba(24,24,27,.08), inset 0 1px #fff; }
+.primary-action { background: linear-gradient(110deg, #18181b, #3f3f46) !important; color: #fff !important; box-shadow: 0 10px 25px -10px rgba(24,24,27,.55); }
+.primary-action:hover:not(:disabled) { box-shadow: 0 16px 30px -10px rgba(24,24,27,.45); }
+header { background-color: rgba(255,255,255,.88) !important; border-color: rgba(24,24,27,.10) !important; }
+footer { background-color: rgba(255,255,255,.82) !important; border-color: rgba(24,24,27,.10) !important; }
+[class*="text-slate-100"], [class*="text-slate-200"], [class*="text-slate-300"] { color: #27272a !important; }
+[class*="text-slate-400"], [class*="text-slate-500"] { color: #71717a !important; }
+[class*="bg-slate-900"], [class*="bg-slate-950"], [class*="bg-\["] { background-color: rgba(255,255,255,.72) !important; }
+[class*="border-slate-"] { border-color: rgba(24,24,27,.12) !important; }
+[class*="text-cyan-"], [class*="text-blue-"], [class*="text-purple-"], [class*="text-emerald-"], [class*="text-amber-"], [class*="text-rose-"], [class*="text-red-"] { color: #3f3f46 !important; }
+
+/* Explicitly neutralize the original dark layout utilities. */
+div.min-h-screen { background-color: #f4f5f7 !important; }
+header { background-color: rgba(255,255,255,.92) !important; }
+main { color: #27272a; }
+main h1, main h2, main h3, main h4, main span, main p { text-shadow: none; }
+footer { color: #71717a !important; }
 
 code, pre, .font-mono {
   font-family: 'JetBrains Mono', monospace;
@@ -115,3 +131,29 @@ code, pre, .font-mono {
 .beacon-pulse {
   animation: beacon 2.5s infinite ease-in-out;
 }
+
+/* Authoritative light theme — intentionally last so legacy component utilities cannot win. */
+:root { color-scheme: light; }
+body { background: #f6f7f9 !important; color: #18181b !important; }
+.cyber-grid {
+  background-color: #f6f7f9 !important;
+  background-image: linear-gradient(to right, rgba(24,24,27,.035) 1px, transparent 1px), linear-gradient(to bottom, rgba(24,24,27,.035) 1px, transparent 1px) !important;
+}
+.glow-ambient { background: radial-gradient(circle at 50% 0%, #fff 0%, rgba(226,232,240,.6) 40%, transparent 72%) !important; }
+header, footer { background: rgba(255,255,255,.94) !important; border-color: #e4e4e7 !important; color: #27272a !important; }
+.glass-panel, .glass-panel-interactive, .judge-hero {
+  background: rgba(255,255,255,.96) !important;
+  border: 1px solid #e4e4e7 !important;
+  color: #27272a !important;
+  box-shadow: 0 12px 32px rgba(24,24,27,.07) !important;
+}
+.glass-panel-interactive:hover { border-color: #a1a1aa !important; box-shadow: 0 16px 38px rgba(24,24,27,.10) !important; }
+nav { background: #fff !important; border-color: #d4d4d8 !important; box-shadow: 0 4px 14px rgba(24,24,27,.05) !important; }
+main [role="alert"] { background: #fff7f7 !important; background-image: none !important; border-color: #fca5a5 !important; color: #7f1d1d !important; box-shadow: none !important; }
+main [role="alert"] h3, main [role="alert"] p { color: #7f1d1d !important; }
+.primary-action { background: #18181b !important; color: white !important; box-shadow: 0 10px 24px rgba(24,24,27,.22) !important; }
+.primary-action:hover:not(:disabled) { background: #27272a !important; box-shadow: 0 14px 28px rgba(24,24,27,.28) !important; }
+[class*="text-slate-100"], [class*="text-slate-200"], [class*="text-slate-300"] { color: #27272a !important; }
+[class*="text-slate-400"], [class*="text-slate-500"] { color: #71717a !important; }
+[class*="bg-slate-800"], [class*="bg-slate-900"], [class*="bg-slate-950"] { background-color: #f4f4f5 !important; }
+[class*="border-slate-700"], [class*="border-slate-800"] { border-color: #d4d4d8 !important; }
